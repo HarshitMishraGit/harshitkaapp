@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "harshitkaapp",
+    "slug": "harshitkaapp",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "harshitkaapp"
+}
