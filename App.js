@@ -7,14 +7,16 @@ import { StyleSheet, Text, View ,Button,TextInput} from 'react-native';
 import Notes from './components/Notes';
 import { NavigationContainer } from '@react-navigation/native';;
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import NewPage from './components/NewPage';
 
 const stackNavigation = createNativeStackNavigator();
 export default function App() {
 
   return (
     <NavigationContainer>
-      <stackNavigation.Navigator>
+      <stackNavigation.Navigator initialRouteName='Notes'>
         <stackNavigation.Screen name='Notes' component={Notes} options={{title:"My notes"}} />
+        <stackNavigation.Screen name='NewPage' component={NewPage} options={{title:"New Page"}} />
       </stackNavigation.Navigator>
 </NavigationContainer>
   );

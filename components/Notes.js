@@ -4,7 +4,7 @@ import { AppRegistry, ScrollView, Image } from 'react-native';
 import { StyleSheet, Text, View ,Button,TextInput} from 'react-native';
 import Home from './Home'
 // import Imagecomp from 'Imagecomp';
-const Notes = () => {
+const Notes = ({navigation}) => {
     const [listOfPost, setlistOfPost] = useState(["one","two","three"]);
   const [value, setvalue] = useState('');
   const [showtext, setshowtext] = useState(false);
@@ -36,7 +36,10 @@ const Notes = () => {
       {/* <Image source={{uri:"https://blog.logrocket.com/wp-content/uploads/2019/07/browseroutput-300x230.png"}}></Image> */}
     <View style={styles.container}>
     <Text style={{marginTop:100}}></Text>
-        <StatusBar style="auto" />
+            <StatusBar style="auto" />
+            <Button title='Got to next page' color={'black'} onPress={() => {
+              navigation.navigate('NewPage')
+            }}></Button>
       <Text>This is my first React Native app!!</Text>
       <TextInput placeholder='Enter something' onChangeText={(value)=>setvalue(value)} 
       style={{width:200,borderWidth:1,paddingLeft:10,margin:10}}
