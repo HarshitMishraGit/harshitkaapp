@@ -6,7 +6,7 @@ const NewPage = (props) => {
     return (
         <View>
             <Text>This is new Page</Text>
-            <Text>This is The recived Param: { props.route.params.name}</Text>
+            {/* <Text>This is The recived Param: { props.route.params.name}</Text> */}
 
         </View>
     );

@@ -8,16 +8,24 @@ import Notes from './components/Notes';
 import { NavigationContainer } from '@react-navigation/native';;
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import NewPage from './components/NewPage';
+import Home from './components/Home';
+import HomePage from './components/HomePage';
+import BottomTabNavigation from './components/Navigation/BottomTabNavigation';
+import SN from './components/Navigation/SN';
 
+// import StackNavigationcomp from './components/Navigation/stackNavigationcomp';
+//  We are using diffent Type of Navigations in the same app 
 const stackNavigation = createNativeStackNavigator();
 export default function App() {
 
   return (
     <NavigationContainer>
-      <stackNavigation.Navigator initialRouteName='Notes'>
-        <stackNavigation.Screen name='Notes' component={Notes} options={{title:"My notes "}} />
-        <stackNavigation.Screen name='NewPage' component={NewPage} options={{title:"New Page"}} />
+      <stackNavigation.Navigator initialRouteName='HomePage'>
+        <stackNavigation.Screen name='Home' component={HomePage} options={{ title: "Home Page " }} />
+        <stackNavigation.Screen name='BottomTabnavigation' component={BottomTabNavigation} options={{ title: "Bottom Tab Navigation" }} />
+        <stackNavigation.Screen name='stacknavigatorcomp' component={SN}  options={{title:"Stack Navigation"}}/>
       </stackNavigation.Navigator>
+
 </NavigationContainer>
   );
 }

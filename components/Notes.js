@@ -37,10 +37,8 @@ const Notes = ({navigation}) => {
     <View style={styles.container}>
     <Text style={{marginTop:100}}></Text>
             <StatusBar style="auto" />
-            <Button title='Got to next page' color={'black'} onPress={() => {
-              navigation.navigate('NewPage', {
-                name:"harshit"
-              })
+            <Button title='Got to next page (stackNavigation)' color={'black'} onPress={() => {
+              navigation.navigate('NewPage')
             }}></Button>
       <Text>This is my first React Native app!!</Text>
       <TextInput placeholder='Enter something' onChangeText={(value)=>setvalue(value)} 
