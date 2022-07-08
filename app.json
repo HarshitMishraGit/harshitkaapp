@@ -3,6 +3,12 @@
     "name": "harshitkaapp",
     "slug": "harshitkaapp",
     "version": "1.0.0",
+    "icon":"./assets/images/icons.png",
+    "splash":{
+      "image":"./assets/images/note.png",
+      "backgroundColor": "#FEF9B0",
+      "resizeMode": "contain"
+    },
     "assetBundlePatterns": [
       "**/*"
     ]
