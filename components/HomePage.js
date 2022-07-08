@@ -25,6 +25,11 @@ const HomePage = ({navigation}) => {
             <Button  title='Material Top Tab Navigation Example' color={'green'} onPress={() => {
                 navigation.navigate('materialtoptabnav')
             } } />
+                <Text ></Text>
+                
+            <Button  title='Drawer Navigation Example' color={'green'} onPress={() => {
+                navigation.navigate('Drawernav')
+            } } />
             </View>
         </View>
     );

@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { Component, useRef, useState, useEffect } from 'react';
 import { AppRegistry, ScrollView, Image } from 'react-native';
-import { StyleSheet, Text, View ,Button,TextInput} from 'react-native';
+import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
 // import Home from './components/Home';
 // import Imagecomp from './components/Imagecomp';
 import Notes from './components/Notes';
@@ -14,6 +14,7 @@ import BottomTabNavigation from './components/Navigation/BottomTabNavigation';
 import SN from './components/Navigation/SN';
 import MBTN from './components/Navigation/MBTN';
 import MTTN from './components/Navigation/MTTN';
+import Drawernav from './components/Navigation/Drawernav';
 
 // import StackNavigationcomp from './components/Navigation/stackNavigationcomp';
 //  We are using diffent Type of Navigations in the same app 
@@ -28,6 +29,7 @@ export default function App() {
         <stackNavigation.Screen name='stacknavigatorcomp' component={SN} options={{ title: "Stack Navigation" }} />
         <stackNavigation.Screen name='materialbottomtabnav' component={MBTN} options={{title:"Material Bottom tab Navigation"}} />
         <stackNavigation.Screen name='materialtoptabnav' component={MTTN} options={{title:"Material Top tab Navigation"}} />
+        <stackNavigation.Screen name='Drawernav' component={Drawernav} options={{title:"Drawer Navigation",headerShown:false}} />
       </stackNavigation.Navigator>
 
 </NavigationContainer>
