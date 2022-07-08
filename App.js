@@ -12,6 +12,8 @@ import Home from './components/Home';
 import HomePage from './components/HomePage';
 import BottomTabNavigation from './components/Navigation/BottomTabNavigation';
 import SN from './components/Navigation/SN';
+import MBTN from './components/Navigation/MBTN';
+import MTTN from './components/Navigation/MTTN';
 
 // import StackNavigationcomp from './components/Navigation/stackNavigationcomp';
 //  We are using diffent Type of Navigations in the same app 
@@ -23,7 +25,9 @@ export default function App() {
       <stackNavigation.Navigator initialRouteName='HomePage'>
         <stackNavigation.Screen name='Home' component={HomePage} options={{ title: "Home Page " }} />
         <stackNavigation.Screen name='BottomTabnavigation' component={BottomTabNavigation} options={{ title: "Bottom Tab Navigation" }} />
-        <stackNavigation.Screen name='stacknavigatorcomp' component={SN}  options={{title:"Stack Navigation"}}/>
+        <stackNavigation.Screen name='stacknavigatorcomp' component={SN} options={{ title: "Stack Navigation" }} />
+        <stackNavigation.Screen name='materialbottomtabnav' component={MBTN} options={{title:"Material Bottom tab Navigation"}} />
+        <stackNavigation.Screen name='materialtoptabnav' component={MTTN} options={{title:"Material Top tab Navigation"}} />
       </stackNavigation.Navigator>
 
 </NavigationContainer>

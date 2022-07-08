@@ -38,7 +38,7 @@ const Notes = ({navigation}) => {
     <Text style={{marginTop:100}}></Text>
             <StatusBar style="auto" />
             <Button title='Got to next page (stackNavigation)' color={'black'} onPress={() => {
-              navigation.navigate('NewPage')
+              navigation.navigate('NewPage',{name:"Harshit"})
             }}></Button>
       <Text>This is my first React Native app!!</Text>
       <TextInput placeholder='Enter something' onChangeText={(value)=>setvalue(value)} 
@@ -82,7 +82,7 @@ const Notes = ({navigation}) => {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#faf3d4',
+      // backgroundColor: '#fff',
       alignItems: 'center',
       // justifyContent: 'center',
       
