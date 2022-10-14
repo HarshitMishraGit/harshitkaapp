@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "harshitkaapp",
+    "name": "harshitnpmkaapp",
     "slug": "harshitkaapp",
     "version": "1.0.0",
     "icon":"./assets/images/icons.png",
     "splash":{
-      "image":"./assets/images/note.png",
+      "image":"./assets/images/splash.jpg",
       "backgroundColor": "#FEF9B0",
       "resizeMode": "contain"
     },
